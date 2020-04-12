@@ -1,6 +1,6 @@
 {
   "name": "@re-space/example",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "private": false,
   "workspace": true,
   "source": "src/publicApi.ts",
@@ -14,9 +14,9 @@
     "url": "https://github.com/maktarsis"
   },
   "scripts": {
-    "start": "rollup -cw",
-    "build": "rollup -c",
-    "test": "jest --passWithNoTests",
+    "start": "re-space serve",
+    "build": "re-space build",
+    "test": "re-space test --config jest.config.js --passWithNoTests",
     "docz": "docz dev -p 6010",
     "lint:esm": "eslint src/**/*.{js,jsx,ts,tsx}",
     "lint:css": "stylelint src/**/*.{css,sass,scss}"
