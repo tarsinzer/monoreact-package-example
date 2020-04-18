@@ -17,9 +17,9 @@
     "start": "re-space serve",
     "build": "re-space build",
     "test": "re-space test --passWithNoTests",
-    "docz": "docz dev -p 6010",
-    "lint:esm": "eslint src/**/*.{js,jsx,ts,tsx}",
-    "lint:css": "stylelint src/**/*.{css,sass,scss}"
+    "lint:esm": "re-space lint src/**/*.{js,jsx,ts,tsx}",
+    "lint:css": "stylelint src/**/*.{css,sass,scss}",
+    "docz": "docz dev -p 6010"
   },
   "peerDependencies": {
     "grommet": "*",
