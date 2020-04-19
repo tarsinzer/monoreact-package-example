@@ -36,8 +36,11 @@ export const Dashboard: React.FC = () => {
 
   const controlledColumns = columnDashboard.map(col => ({ ...col }));
 
-  const onCheckAll = (event: any) =>
-    setChecked(event.target.checked ? progress.map(datum => datum.name) : []);
+  const onCheckAll = React.useCallback(
+    (event: React.ChangeEvent<HTMLInputElement>) =>
+      setChecked(event.target.checked ? progress.map(datum => datum.name) : []),
+    []
+  );
 
   return (
     <Grommet theme={grommet}>

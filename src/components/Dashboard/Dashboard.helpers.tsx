@@ -7,12 +7,16 @@ export const renderColumnPercent = (datum: Product.Progress) => (
   </Box>
 );
 
-export const renderColumnCheck = (checked: string[], onCheck: any) => (
-  datum: Product.Progress
-) => (
+export const renderColumnCheck = (
+  checked: string[],
+  onCheck: (event: React.ChangeEvent<HTMLInputElement>, name: string) => void
+) => (datum: Product.Progress) => (
   <CheckBox
     key={datum.name}
     checked={checked.includes(datum.name)}
-    onChange={e => onCheck(e, datum.name)}
+    // eslint-disable-next-line react/jsx-no-bind
+    onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+      onCheck(e, datum.name)
+    }
   />
 );
