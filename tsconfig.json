@@ -1,10 +1,25 @@
 {
-  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "baseUrl": "src",
+    "baseUrl": "./",
+    "rootDir": "./src",
     "sourceMap": true,
-    "declaration": true
+    "declaration": true,
+    "jsx": "react",
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "types": ["../../node_modules/@re-space/cli"],
+    "typeRoots": ["../../node_modules/@types"]
   },
-  "include": ["src", "../../**/*.d.ts"],
-  "exclude": ["src/**/*.test.*", "src/**/*.spec.*"]
+  "include": ["src"]
 }
