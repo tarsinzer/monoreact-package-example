@@ -2,13 +2,21 @@ import React from 'react';
 import { Box, Text } from 'grommet';
 import { Diamond } from 'grommet-icons';
 
-export const DiamondContainer = ({
+interface Props {
+  id: string;
+  name: string;
+  location: string;
+  percent: number;
+  textSize?: string;
+}
+
+export const DiamondContainer: React.FC<Props> = ({
   id,
   name,
   location,
   percent,
   textSize
-}: any) => (
+}) => (
   <Box key={id} align='center' alignSelf='center' direction='row' gap='medium'>
     <Diamond color='neutral-3' id={id} size='xlarge' />
     <Box align='center'>

@@ -5,7 +5,7 @@ import { progress } from '../../shared/data';
 import { DiamondContainer } from './DiamondContainer';
 import { connection, customTheme } from './Settings.helpers';
 
-export const Settings = () => {
+export const Settings: React.FC = () => {
   const [draw, setDraw] = React.useState(true);
 
   const renderDiamond = React.useCallback(
@@ -53,7 +53,7 @@ export const Settings = () => {
               <Box alignSelf='center' margin={{ bottom: 'medium' }}>
                 <DiamondContainer
                   key={1}
-                  id={1}
+                  id='1'
                   location={progress[0].location}
                   name={progress[0].name}
                   percent={progress[0].percent}

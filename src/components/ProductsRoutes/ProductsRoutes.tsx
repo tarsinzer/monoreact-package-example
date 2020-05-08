@@ -5,7 +5,7 @@ import { ProductsList } from '../ProductsList/ProductsList';
 import { Dashboard } from '../Dashboard/Dashboard';
 import { Settings } from '../Settings/Settings';
 
-export const ProductsRoutes = () => (
+export const ProductsRoutes: React.FC = () => (
   <Switch>
     <Route path='/products/products-list'>
       <ProductsList />
