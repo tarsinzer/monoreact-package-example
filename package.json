@@ -4,8 +4,8 @@
   "private": false,
   "workspace": true,
   "source": "src/publicApi.ts",
-  "module": "dist/bundle.esm.js",
-  "jsnext:main": "dist/bundle.esm.js",
+  "module": "dist/bundle.js",
+  "jsnext:main": "dist/bundle.js",
   "types": "dist/publicApi.d.ts",
   "license": "MIT",
   "author": {
@@ -17,8 +17,8 @@
     "start": "re-space serve",
     "build": "re-space build",
     "test": "re-space test --passWithNoTests",
-    "lint": "re-space lint src/**/*.{js,jsx,ts,tsx}",
-    "stylelint": "stylelint src/**/*.{css,sass,scss}",
+    "lint": "re-space lint \"src/**/*.{js,jsx,ts,tsx}\"",
+    "stylelint": "stylelint \"src/**/*.{css,sass,scss}\"",
     "docz": "docz dev -p 6010"
   },
   "peerDependencies": {
