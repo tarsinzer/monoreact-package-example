@@ -6,7 +6,7 @@
   "source": "src/publicApi.ts",
   "module": "dist/bundle.js",
   "jsnext:main": "dist/bundle.js",
-  "types": "dist/publicApi.d.ts",
+  "typings": "dist/publicApi.d.ts",
   "license": "MIT",
   "author": {
     "email": "tarsis.maksym@gmail.com",
