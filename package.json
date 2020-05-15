@@ -5,7 +5,6 @@
   "workspace": true,
   "source": "src/publicApi.ts",
   "module": "dist/bundle.js",
-  "jsnext:main": "dist/bundle.js",
   "typings": "dist/publicApi.d.ts",
   "license": "MIT",
   "author": {
