@@ -17,7 +17,7 @@
     "build": "re-space build",
     "test": "re-space test --passWithNoTests",
     "lint": "re-space lint \"src/**/*.{js,jsx,ts,tsx}\"",
-    "stylelint": "stylelint \"src/**/*.{css,sass,scss}\"",
+    "stylelint": "npx stylelint \"src/**/*.{css,sass,scss}\"",
     "docz": "docz dev -p 6010"
   },
   "peerDependencies": {
