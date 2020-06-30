@@ -1,5 +1,5 @@
 {
-  "name": "@re-space/example",
+  "name": "@monoreact/package-example",
   "version": "0.1.0",
   "private": false,
   "workspace": true,
@@ -13,10 +13,10 @@
     "url": "https://github.com/maktarsis"
   },
   "scripts": {
-    "start": "re-space serve",
-    "build": "re-space build",
-    "test": "re-space test --passWithNoTests",
-    "lint": "re-space lint \"src/**/*.{js,jsx,ts,tsx}\"",
+    "start": "monoreact serve",
+    "build": "monoreact build",
+    "test": "monoreact test --passWithNoTests",
+    "lint": "monoreact lint \"src/**/*.{js,jsx,ts,tsx}\"",
     "stylelint": "npx stylelint \"src/**/*.{css,sass,scss}\""
   },
   "peerDependencies": {
@@ -26,5 +26,8 @@
     "react-dom": "16.13.1",
     "react-router-dom": "5.2.0",
     "styled-components": "5.1.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
