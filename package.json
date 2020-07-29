@@ -10,7 +10,7 @@
   "author": {
     "email": "tarsis.maksym@gmail.com",
     "name": "Maksym Tarsis",
-    "url": "https://github.com/maktarsis"
+    "url": "https://github.com/retarsis"
   },
   "scripts": {
     "start": "monoreact serve",
