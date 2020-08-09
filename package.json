@@ -4,6 +4,7 @@
   "private": false,
   "workspace": true,
   "source": "src/publicApi.ts",
+  "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.js",
   "typings": "dist/publicApi.d.ts",
   "license": "MIT",
