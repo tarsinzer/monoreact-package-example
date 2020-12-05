@@ -21,12 +21,12 @@
     "stylelint": "npx stylelint \"src/**/*.{css,sass,scss}\""
   },
   "peerDependencies": {
-    "grommet": "2.13.0",
-    "grommet-icons": "4.4.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-router-dom": "5.2.0",
-    "styled-components": "5.1.1"
+    "grommet": "^2.16.0",
+    "grommet-icons": "^4.5.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "5^.2.0",
+    "styled-components": "^5.2.1"
   },
   "publishConfig": {
     "access": "public"
