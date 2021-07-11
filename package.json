@@ -14,7 +14,7 @@
     "url": "https://github.com/retarsis"
   },
   "scripts": {
-    "start": "monoreact serve",
+    "start": "monoreact watch",
     "build": "monoreact build",
     "test": "monoreact test --passWithNoTests",
     "lint": "monoreact lint \"src/**/*.{js,jsx,ts,tsx}\"",
