@@ -1,20 +1,14 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import { ProductsList } from '../ProductsList/ProductsList';
 import { Dashboard } from '../Dashboard/Dashboard';
 import { Settings } from '../Settings/Settings';
 
 export const ProductsRoutes: React.FC = () => (
-  <Switch>
-    <Route path='/products/products-list'>
-      <ProductsList />
-    </Route>
-    <Route path='/products/dashboard'>
-      <Dashboard />
-    </Route>
-    <Route path='/products/settings'>
-      <Settings />
-    </Route>
-  </Switch>
+  <Routes>
+    <Route element={<ProductsList />} path='/products/products-list' />
+    <Route element={<Dashboard />} path='/products/dashboard' />
+    <Route element={<Settings />} path='/products/settings' />
+  </Routes>
 );
